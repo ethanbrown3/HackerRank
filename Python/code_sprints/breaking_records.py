@@ -25,22 +25,19 @@ def breakingRecords(scores):
     low_records = str(low_records)
     return high_records + ' ' + low_records
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    n = int(raw_input())
+#     n = int(raw_input())
 
-    score = map(int, raw_input().rstrip().split())
+#     score = map(int, raw_input().rstrip().split())
 
-    # f = open('code_sprints/input.txt', 'r') 
-    # score = map(int, f.readlines()[0].split())
+#     result = breakingRecords(score)
 
-    result = breakingRecords(score)
+#     fptr.write(result)
+#     fptr.write('\n')
 
-    fptr.write(result)
-    fptr.write('\n')
-
-    fptr.close()
+#     fptr.close()
 
 
 if __name__ == '__main__':
