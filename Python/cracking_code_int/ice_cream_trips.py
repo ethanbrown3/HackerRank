@@ -1,12 +1,6 @@
 #https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem
 #!/bin/python
 
-import math
-import os
-import random
-import re
-import sys
-
 # Complete the solve function below.
 def solve(arr, money):
     no_flavors = len(arr)
@@ -18,7 +12,7 @@ def solve(arr, money):
             out.append(memo[money-arr[i]])
             break
         memo[arr[i]] = i
-    
+
     print ' '.join([str(i+1) for i in sorted(out)])
 if __name__ == '__main__':
     t = int(raw_input())
@@ -31,4 +25,3 @@ if __name__ == '__main__':
         arr = map(int, raw_input().rstrip().split())
 
         solve(arr, money)
-
