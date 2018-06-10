@@ -5,7 +5,7 @@ import math
 import operator
 
 
-def get_k_closest(k, points):
+def k_closest(k, points):
 	'''
 	First Attempt
 	'''
@@ -27,5 +27,5 @@ def get_distance(point):
 if __name__ == '__main__':
 	test_points = [(1, 1), (-1, -1), (2, 4), (3, 4), (-2, 1), (-1, 0)]
 	k = 2
-	print(get_k_closest(k, test_points))
+	print(k_closest(k, test_points))
 
