@@ -14,7 +14,7 @@ example:
 '''
 
 def find_subsets(given_array):
-    subset = [i for i in range(len(given_array))]
+    subset = [0 for i in range(len(given_array))]
     _helper(given_array, subset, 0)
 
 def _helper(given_array, subset, i):
@@ -27,7 +27,7 @@ def _helper(given_array, subset, i):
         _helper(given_array, subset, i+1)
 
 def print_array(array):
-    print ','.join([str(i) for i in array if i != None])
+    print '{' + ', '.join([str(i) for i in array if i != None]) + '}'
 
 if __name__ == '__main__':
     main_set = raw_input('Enter space seperated set: ').split()
