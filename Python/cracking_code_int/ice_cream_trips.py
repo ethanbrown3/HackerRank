@@ -1,6 +1,7 @@
-#https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem
 #!/bin/python
-
+'''
+https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem
+'''
 # Complete the solve function below.
 def solve(arr, money):
     no_flavors = len(arr)
